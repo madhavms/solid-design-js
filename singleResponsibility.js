@@ -7,7 +7,7 @@ class CalorieTracker {
   trackCalories(calorieCount) {
     this.currentCalories += calorieCount;
     if (this.currentCalories > this.maxCalories) {
-      logCalorieSurplus();
+      this.logCalorieSurplus();
     }
   }
 
