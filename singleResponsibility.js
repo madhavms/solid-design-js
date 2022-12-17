@@ -1,3 +1,4 @@
+//Stick to single responsibility and seperate concerns using modules
 import logMessage from './logger.js'
 
 class CalorieTracker {
