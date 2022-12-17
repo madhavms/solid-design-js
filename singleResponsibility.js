@@ -1,3 +1,5 @@
+import logMessage from './logger.js'
+
 class CalorieTracker {
   constructor(maxCalories) {
     this.maxCalories = maxCalories;
@@ -7,12 +9,8 @@ class CalorieTracker {
   trackCalories(calorieCount) {
     this.currentCalories += calorieCount;
     if (this.currentCalories > this.maxCalories) {
-      this.logCalorieSurplus();
+        logMessage("Max calories exceeded");
     }
-  }
-
-  logCalorieSurplus() {
-    console.log("Max calories exceeded");
   }
 }
 
