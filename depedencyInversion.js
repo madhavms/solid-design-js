@@ -6,7 +6,7 @@ const prompt = promptSync();
 Create a wrapper for payment so that we never have to change the
 payment logic inside the Store class.
 */
-
+image.png
 class Store {
   constructor(paymentProcessor) {
     this.paymentProcessor = paymentProcessor;
